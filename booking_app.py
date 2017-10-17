@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_sqlalchemy import SQLAlchemy
-import os
+#import os
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'mysql+pymysql://Booking-app:osman123@localhost:8889/Booking-app')
+app.config['SQLALCHEMY_DATABASE_URI'] = ('DATABASE_URL', 'mysql+pymysql://Booking-App:1234@localhost:8889/Booking-app')
 app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
 #app.secret_key = 'welloethio'
