@@ -1,9 +1,19 @@
 {% block content %}
 
+<<<<<<< 81c772589fd48f5a35fc763040af9d75a1956010
 <div id="login" class="modal">
   <div class="modal-content">
 <h1>Login</h1>
 <form action ="/login" method ='post'>
+=======
+<h1 class="blue-text text-darken-2" style="text-align:center">Login</h1>
+
+
+<div class="container">
+  <div class="card" class="col l4">
+
+<form action ="/login" method ='post' class="z-depth-5" class="section">
+>>>>>>> added style to login
       <table>
           <tr>
               <td><label for = "username">Username</label></td>
@@ -20,9 +30,22 @@
               <td><div class="error">{{pwd_error}}</div></td>
           </tr>
       </table>
+<<<<<<< 81c772589fd48f5a35fc763040af9d75a1956010
       <input type ="submit" value="Submit">
       <p>Don't have an account?<a href="/signup">Create one!</a>
 </form>
 </div>
+=======
+      <div style="text-align:center">
+      <button class="btn waves-effect waves-light deep-purple accent-2" type="submit" name="action">LOGIN
+    <i class="material-icons right">send</i>
+  </button>
+</div>
+  <br>
+      <!<input type ="submit" class="waves-effect waves-light btn deep-purple accent-2" value="login">
+      <p style="text-align:center">Don't have an account?<a class="deep-purple accent-2" href="/signup">Create one!</a>
+</form>
+  </div>
+>>>>>>> added style to login
 </div>
 {% endblock %}
